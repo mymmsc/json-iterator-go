@@ -49,14 +49,25 @@ func (iter *Iterator) ReadObject() (ret string) {
 func (iter *Iterator) readFieldHash() int64 {
 	hash := int64(0x811c9dc5)
 	c := iter.nextToken()
-	if c != '"' {
-		iter.ReportError("readFieldHash", `expect ", but found `+string([]byte{c}))
-		return 0
+	unquotedKey := false
+	if c != '"' && c != '\'' {
+		unquotedKey = true
+		//iter.ReportError("readFieldHash", `expect ", but found `+string([]byte{c}))
+		//return 0
+		hash ^= int64(c)
+		hash *= 0x1000193
 	}
 	for {
 		for i := iter.head; i < iter.tail; i++ {
 			// require ascii string and no escape
 			b := iter.buf[i]
+			if unquotedKey && b == ':' {
+				iter.head = i
+				c = iter.nextToken()
+				//hash ^= int64(b)
+				//hash *= 0x1000193
+				return hash
+			}
 			if b == '\\' {
 				iter.head = i
 				for _, b := range iter.readStringSlowPath() {

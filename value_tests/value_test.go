@@ -3,7 +3,7 @@ package test
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/json-iterator/go"
+	"github.com/mymmsc/go-ctp/encoding/json"
 	"github.com/modern-go/reflect2"
 	"github.com/stretchr/testify/require"
 	"testing"

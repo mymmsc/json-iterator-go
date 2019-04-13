@@ -572,7 +572,8 @@ func (decoder *oneFieldStructDecoder) Decode(ptr unsafe.Pointer, iter *Iterator)
 		return
 	}
 	for {
-		if iter.readFieldHash() == decoder.fieldHash {
+		hash := iter.readFieldHash()
+		if hash == decoder.fieldHash {
 			decoder.fieldDecoder.Decode(ptr, iter)
 		} else {
 			iter.Skip()

@@ -3,7 +3,7 @@ package extra
 import (
 	"testing"
 
-	"github.com/json-iterator/go"
+	"github.com/mymmsc/go-ctp/encoding/json"
 	"github.com/stretchr/testify/require"
 )
 

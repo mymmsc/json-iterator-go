@@ -1,7 +1,7 @@
 package extra
 
 import (
-	"github.com/json-iterator/go"
+	"github.com/mymmsc/go-ctp/encoding/json"
 	"time"
 	"unsafe"
 )

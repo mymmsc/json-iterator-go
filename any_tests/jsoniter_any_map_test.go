@@ -1,7 +1,7 @@
 package any_tests
 
 import (
-	"github.com/json-iterator/go"
+	"github.com/mymmsc/go-ctp/encoding/json"
 	"github.com/stretchr/testify/require"
 	"testing"
 )

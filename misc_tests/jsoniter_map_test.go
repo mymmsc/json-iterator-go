@@ -5,7 +5,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/json-iterator/go"
+	"github.com/mymmsc/go-ctp/encoding/json"
 	"github.com/stretchr/testify/require"
 	"strings"
 )
