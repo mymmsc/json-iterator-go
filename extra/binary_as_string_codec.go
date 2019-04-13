@@ -2,7 +2,7 @@ package extra
 
 import (
 	"github.com/modern-go/reflect2"
-	jsoniter "github.com/mymmsc/go-ctp/encoding/json"
+	jsoniter "github.com/mymmsc/json-iterator-go"
 	"unicode/utf8"
 	"unsafe"
 )

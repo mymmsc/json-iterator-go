@@ -1,8 +1,8 @@
-[![Sourcegraph](https://sourcegraph.com/github.com/mymmsc/go-ctp/encoding/json/-/badge.svg)](https://sourcegraph.com/github.com/mymmsc/go-ctp/encoding/json?badge)
-[![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](http://godoc.org/github.com/mymmsc/go-ctp/encoding/json)
+[![Sourcegraph](https://sourcegraph.com/github.com/mymmsc/json-iterator-go/-/badge.svg)](https://sourcegraph.com/github.com/mymmsc/json-iterator-go?badge)
+[![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](http://godoc.org/github.com/mymmsc/json-iterator-go)
 [![Build Status](https://travis-ci.org/json-iterator/go.svg?branch=master)](https://travis-ci.org/json-iterator/go)
 [![codecov](https://codecov.io/gh/json-iterator/go/branch/master/graph/badge.svg)](https://codecov.io/gh/json-iterator/go)
-[![rcard](https://goreportcard.com/badge/github.com/mymmsc/go-ctp/encoding/json)](https://goreportcard.com/report/github.com/mymmsc/go-ctp/encoding/json)
+[![rcard](https://goreportcard.com/badge/github.com/mymmsc/json-iterator-go)](https://goreportcard.com/report/github.com/mymmsc/json-iterator-go)
 [![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://raw.githubusercontent.com/json-iterator/go/master/LICENSE)
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/json-iterator/Lobby)
 
@@ -14,7 +14,7 @@ You can also use thrift like JSON using [thrift-iterator](https://github.com/thr
 
 ![benchmark](http://jsoniter.com/benchmarks/go-benchmark.png)
 
-Source code: https://github.com/mymmsc/go-ctp/encoding/json-benchmark/blob/master/src/github.com/mymmsc/go-ctp/encoding/json-benchmark/benchmark_medium_payload_test.go
+Source code: https://github.com/mymmsc/json-iterator-go-benchmark/blob/master/src/github.com/mymmsc/json-iterator-go-benchmark/benchmark_medium_payload_test.go
 
 Raw Result (easyjson requires static code generation)
 
@@ -60,7 +60,7 @@ json.Unmarshal(input, &data)
 with
 
 ```go
-import "github.com/mymmsc/go-ctp/encoding/json"
+import "github.com/mymmsc/json-iterator-go"
 
 var json = jsoniter.ConfigCompatibleWithStandardLibrary
 json.Unmarshal(input, &data)
@@ -71,7 +71,7 @@ json.Unmarshal(input, &data)
 # How to get
 
 ```
-go get github.com/mymmsc/go-ctp/encoding/json
+go get github.com/mymmsc/json-iterator-go
 ```
 
 # Contribution Welcomed !

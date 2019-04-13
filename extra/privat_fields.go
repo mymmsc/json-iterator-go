@@ -1,7 +1,7 @@
 package extra
 
 import (
-	"github.com/mymmsc/go-ctp/encoding/json"
+	"github.com/mymmsc/json-iterator-go"
 	"strings"
 	"unicode"
 )

@@ -3,7 +3,7 @@ package skip_tests
 import (
 	"encoding/json"
 	"errors"
-	"github.com/mymmsc/go-ctp/encoding/json"
+	"github.com/mymmsc/json-iterator-go"
 	"github.com/stretchr/testify/require"
 	"io"
 	"reflect"

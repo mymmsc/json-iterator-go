@@ -2,7 +2,7 @@ package jsoniter
 
 import (
 	"fmt"
-	//"github.com/mymmsc/go-ctp/encoding/json/extra"
+	//"github.com/mymmsc/json-iterator-go/extra"
 	"testing"
 )
 

@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/mymmsc/go-ctp/encoding/json"
+	"github.com/mymmsc/json-iterator-go"
 	"github.com/stretchr/testify/require"
 )
 
